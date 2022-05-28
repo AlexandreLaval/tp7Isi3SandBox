@@ -4,6 +4,7 @@ import {
   DEFAULT_ALIVE_PAIRS,
   RENDER_INTERVAL
 } from "./constants.js";
+import {drawGame} from "./view";
 
 export class Model {
   constructor() {
