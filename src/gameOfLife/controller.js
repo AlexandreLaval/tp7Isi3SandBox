@@ -1,5 +1,6 @@
-export const controller = model => {
-  model.run();
+let model;
+export const controller = _model => {
+  model = _model;
 };
 
 const startBtn = document.getElementById('start');
@@ -7,13 +8,13 @@ const stopBtn = document.getElementById('stop');
 const resetBtn = document.getElementById('reset');
 
 startBtn.addEventListener('click', event => {
-  this.run();
+  model.run();
 });
 
 stopBtn.addEventListener('click', event => {
-  this.stop();
+  model.stop();
 });
 
 resetBtn.addEventListener('click', event => {
-  this.reset();
+  model.reset();
 });
